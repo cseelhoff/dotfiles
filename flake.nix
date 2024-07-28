@@ -39,7 +39,10 @@
           ({ pkgs, ... }: {
             environment = {
               systemPackages = with pkgs; [
+                btop
+                eza
                 git
+                home-manager
                 nixpkgs-fmt
                 wget
               ];
@@ -48,6 +51,12 @@
               ];
             };
             programs = {
+              neovim = {
+                enable = true;
+                defaultEditor = true;
+                viAlias = true;
+                withPython3 = true;
+              };
               nix-ld = {
                 enable = true;
                 package = pkgs.nix-ld-rs;

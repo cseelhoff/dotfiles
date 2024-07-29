@@ -39,6 +39,7 @@
           ({ pkgs, ... }: {
             environment = {
               systemPackages = with pkgs; [
+                bat
                 btop
                 eza
                 fzf
@@ -72,7 +73,7 @@
                 syntaxHighlighting.enable = true;
                 ohMyZsh = {
                   enable = true;
-                  theme = "robbyrussell";
+                  theme = "risto";
                   plugins = [
                     "git"
                     "history"

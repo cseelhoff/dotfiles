@@ -1,0 +1,55 @@
+{
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "redhat.telemetry.enabled": false,
+    "git.autofetch": true,
+    "github.copilot.advanced": {},
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.inlineSuggest.enabled": true,
+    "cmake.configureOnOpen": true,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingComments": "never",
+    "python.analysis.typeCheckingMode": "strict",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "dev.containers.dockerPath": "podman",
+    "cmake.options.statusBarVisibility": "visible",
+    "cmake.options.advanced": {
+        "build": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "launch": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "debug": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        }
+    },
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "editor.minimap.enabled": false,
+    "dev.containers.executeInWSL": true,
+    "remote.WSL.debug": true,
+    "remote.WSL.defaultDistro": "NixOS",
+    "[nix]": {
+        "editor.defaultFormatter": "jnoortheen.nix-ide"
+    },
+    "editor.accessibilitySupport": "off",
+    "dotfiles.repository": "https://github.com/cseelhoff/dotfiles.git",
+    "editor.fontFamily": "Hack Nerd Font Mono, Consolas, 'Courier New', monospace",
+    "github.copilot.preferredAccount": "cseelhoff-ms"
+}

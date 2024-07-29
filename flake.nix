@@ -41,16 +41,21 @@
               systemPackages = with pkgs; [
                 btop
                 eza
+                fzf
                 git
                 home-manager
                 nixpkgs-fmt
                 wget
+                zoxide
               ];
               shells = with pkgs; [
                 zsh
               ];
             };
             programs = {
+              fzf = {
+                fuzzyCompletion = true;
+              };
               neovim = {
                 enable = true;
                 defaultEditor = true;
@@ -71,6 +76,7 @@
                   plugins = [
                     "git"
                     "history"
+                    "zoxide"
                   ];
                 };
               };

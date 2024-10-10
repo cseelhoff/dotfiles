@@ -101,6 +101,7 @@
                   # Required for containers under podman-compose to be able to talk to each other.
                   defaultNetwork.settings.dns_enabled = true;
                 };
+                docker.daemon.settings.registry-mirrors = ["https://registry-1.docker.io"];
               };
             })
           ];

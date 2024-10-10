@@ -53,6 +53,7 @@
                   git
                   home-manager
                   nixpkgs-fmt
+                  podman-compose
                   wget
                   zoxide
                 ];

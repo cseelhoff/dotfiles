@@ -1,0 +1,275 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "BlackOdin",
+  "type": "dark",
+  "colors": {
+    "activityBar.background": "#101010",
+    "editor.background": "#000000",
+    "debugToolBar.background": "#101010",
+    "dropdown.listBackground": "#101010",
+    "editorGroupHeader.tabsBackground": "#101010",
+    "editorWidget.background": "#101010",
+    "menu.background": "#101010",
+    "notificationCenterHeader.background": "#101010",
+    "notifications.background": "#101010",
+    "peekViewEditor.background": "#101010",
+    "sideBar.background": "#101010",
+    "sideBarSectionHeader.background": "#101010",
+    "statusBar.background": "#101010",
+    "statusBar.debuggingBackground": "#004080",
+    "statusBar.noFolderBackground": "#101010",
+    "tab.activeBackground": "#080808",
+    "tab.inactiveBackground": "#181818",
+    "titleBar.activeBackground": "#101010",
+  },
+  "tokenColors": [
+    {
+      "name": "Comment", // //
+      "scope": [
+        "comment",
+        "string.comment"
+      ],
+      "settings": {
+        "foreground": "#777777"
+      }
+    },
+    {
+      "name": "function name",
+      "scope": [
+        "entity.name.function", // my_proc
+        "support.function",
+        //"meta.function-call", // (
+      ],
+      "settings": {
+        "foreground": "#ffff88" // function yellow
+      }
+    },
+    {
+      "name": "Package Name / Namespace", 
+      "scope": [
+        "entity.name.type.module", // package oaaa
+        "entity.name.namespace", // package oaaa
+        "meta.import", // import "core:mem"
+        //"entity.name.namespace"
+      ],
+      "settings": {
+        "foreground": "#00ff00",
+        "fontStyle": "",
+      }
+    },
+    {
+      "name": "Library class/type", 
+      "scope": [
+        "support.type.primitive", // int, bool
+        "support.variable"
+      ],
+      "settings": {
+        "foreground": "#00ffbb",
+      }
+    },
+    {
+      "name": "keyword.control",
+      "scope": [
+        "keyword.control", // package if|else|or_else|when|where|for|in|not_in|defer|switch|return|or_return break|or_break|continue|or_continue fallthrough|case|dynamic do|force_inline|no_inline asm
+        "keyword.control.import", // import, foreign
+        "keyword.control.attribute", // @attribute
+        "keyword.control.case", // case
+        "keyword.other", // unsafe, try, catch, finally, throw, rethrow, assert, static_assert, unreachable, breakpoint, macro
+        "keyword.function", // cast,transmute
+      ],
+      "settings": {
+        "foreground": "#c678dd"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": [
+        "storage.type", // proc, type, var, const, let, enum, struct, union, distinct..
+        "storage.type.function.arrow", // ->
+        //"punctuation.definition.bracket.square"
+      ],
+      "settings": {
+        "foreground": "#6688ff",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "punctuation.definition.parameters", 
+      "scope": [
+        "punctuation.definition.parameters" // proc ( para
+      ],
+      "settings": {
+        "foreground": "#6688ff", // proc purple
+      }
+    },
+    {
+      "name": "Variable Object",
+      "scope": [
+        "variable.other.object", // TYPE, library
+      ],
+      "settings": {
+        "foreground": "#00ddff",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Class", // My_Class
+      "scope": [
+        "entity.name.class",
+        "entity.name.module",
+        "entity.name.type",
+        "storage.identifier",
+        "support.class"
+      ],
+      "settings": {
+        "foreground": "#00ffbb",
+        "fontStyle": "underline",
+      }
+    },
+    {
+      "name": "constant.language", // false
+      "scope": "constant.language",
+      "settings": {
+        "foreground": "#ff9977"// string orange
+      }
+    },
+    {
+      "name": "constant.numeric", // 20
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#ff9977"// string orange
+      }
+    },
+    {
+      "name": "Constant",
+      "scope": [
+        "constant",
+        "variable.other.constant"
+      ],
+      "settings": {
+        "foreground": "#ff9977" // string orange
+      }
+    },
+    {
+      "name": "String", // "abc"
+      "scope": [
+        "string",
+        "string.quoted",
+        "string.quoted.double",
+      ],
+      "settings": {
+        "foreground": "#ff9977"
+      }
+    },
+    {
+      "name": "variable.name",
+      "scope": "variable.name",
+      "settings": {
+        "foreground": "#99ddff" // dark+ default
+      }
+    },
+    // {
+    //   "name": "obj block definition.block", // obj definition { curly
+    //   "scope": [
+    //     "punctuation.definition.block"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#ffffff",
+    //   }
+    // },
+    {
+      "name": "Keyword Operator", // ::, ^, &, :=, =, :
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "#ffffff",
+        "fontStyle": ""
+      }
+    },
+    // {
+    //   "name": "Built-in constant", // false
+    //   "scope": "constant.language",
+    //   "settings": {
+    //     "foreground": "#56b6c2",
+    //   }
+    // },
+    // {
+    //   "name": "User-defined constant",
+    //   "scope": [
+    //     "constant.character",
+    //     "constant.other"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#56b6c2",
+    //     "fontStyle": "strikethrough"
+    //   }
+    // },
+    // {
+    //   "name": "Language Variable",
+    //   "scope": "variable.language",
+    //   "settings": {
+    //     "foreground": "#c678dd",
+    //     "fontStyle": "bold strikethrough"
+    //   }
+    // },
+    // {
+    //   "name": "Storage",
+    //   "scope": "storage",
+    //   "settings": {
+    //     "foreground": "#44bbff",
+    //     "fontStyle": ""
+    //   }
+    // },
+    // {
+    //   "name": "Other variable",
+    //   "scope": [
+    //     "variable.other",
+    //     "variable.other.property",
+    //     "variable.other.block"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#abb2bf",
+    //     "fontStyle": "strikethrough"
+    //   }
+    // },
+    // {
+    //   "name": "Inherited Class",
+    //   "scope": "entity.other.inherited-class",
+    //   "settings": {
+    //     "foreground": "#98c379",
+    //     "fontStyle": "strikethrough"
+    //   }
+    // },
+    // {
+    //   "name": "Package Import",
+    //   "scope": [
+    //     "storage.modifier.import",
+    //     "storage.modifier.package"
+    //   ],
+    //   "settings": {
+    //     "foreground": "#61afef",
+    //     "fontStyle": "strikethrough"
+    //   }
+    // },
+    // {
+    //   "name": "Library variable",
+    //   "scope": "support.other.variable",
+    //   "settings": {
+    //     "fontStyle": ""
+    //   }
+    // },
+    // {
+    //   "name": "Invalid",
+    //   "scope": "invalid",
+    //   "settings": {
+    //     "foreground": "#F8F8F0"
+    //   }
+    // },
+    // {
+    //   "name": "Invalid deprecated",
+    //   "scope": "invalid.deprecated",
+    //   "settings": {
+    //     "foreground": "#F8F8F0"
+    //   }
+    // },
+  ]
+}

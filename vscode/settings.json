@@ -51,5 +51,32 @@
     "editor.accessibilitySupport": "off",
     "dotfiles.repository": "https://github.com/cseelhoff/dotfiles.git",
     "editor.fontFamily": "Hack Nerd Font Mono, Consolas, 'Courier New', monospace",
-    "github.copilot.preferredAccount": "cseelhoff-ms"
+    "github.copilot.preferredAccount": "cseelhoff-ms",
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.scrollback": 10000,
+    "cmake.showOptionsMovedNotification": false,
+    "dev.containers.executeInWSLDistro": "nixos",
+    "c-cpp-flylint.clang.pedanticErrors": true,
+    "c-cpp-flylint.cppcheck.inconclusive": true,
+    "c-cpp-flylint.flexelint.enable": false,
+    "remote.SSH.remotePlatform": {
+        "51.141.165.110": "linux",
+        "20.36.20.130": "linux",
+        "52.229.13.242": "linux",
+        "40.65.106.139": "linux"
+    },
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingParameterType": "warning",
+        "reportUndefinedVariable": "warning",
+        "reportUnknownArgumentType": "warning",
+        "reportUnknownMemberType": "warning",
+        "reportUnknownParameterType": "warning",
+        "reportUnknownVariableType": "warning",
+        "reportUnusedImport": "warning"
+    },
+    "dev.containers.dockerComposePath": "podman-compose",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "workbench.colorTheme": "One Monokai",
+    "lldb.displayFormat": "decimal"
 }

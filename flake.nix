@@ -90,6 +90,7 @@
                   };
                 };
               };
+              services.onedrive.enable = true;
               users.defaultUserShell = pkgs.zsh;
               virtualisation = {
                 podman = {

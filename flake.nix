@@ -51,7 +51,6 @@
                   eza
                   fzf
                   git
-                  glfw-wayland
                   home-manager
                   nixpkgs-fmt
                   podman-compose

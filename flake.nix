@@ -23,7 +23,7 @@
           modules = [
             nixos-wsl.nixosModules.default
             {
-              system.stateVersion = "24.05";
+              system.stateVersion = "24.11";
               wsl = {
                 enable = true;
                 startMenuLaunchers = true;
@@ -51,6 +51,7 @@
                   eza
                   fzf
                   git
+                  glfw-wayland
                   home-manager
                   nixpkgs-fmt
                   podman-compose
